@@ -15,7 +15,7 @@ const Timeline = ({
   textAlign = 'left',
   icon,
   outlined = false,
-  baseColor = '#65737e',
+  dotBaseColor = '#65737e',
   alternateContent,
   description,
   titleSize = 16,
@@ -27,9 +27,9 @@ const Timeline = ({
   alternateContentBaseColor = '#fff',
   descriptionColor = ['#fff'],
   descriptionBaseColor = '#fff',
-  titleWeight = '700',
-  alternateContentWeight = '400',
-  descriptionWeight = '400',
+  titleWeight = 700,
+  alternateContentWeight = 400,
+  descriptionWeight = 400,
   pathColor = ['#65737e'],
   pathBaseColor = '#65737e',
   ...props
@@ -59,10 +59,10 @@ const Timeline = ({
                   color:
                     alternateContentColor[index] || alternateContentBaseColor,
                   fontSize: alternateContentSize,
+                  fontWeight: alternateContentWeight,
                 }}
                 className={cn(
                   'flex flex-1 opacity-70',
-                  alternateContentWeight,
                   (textAlign === 'alternating' && index % 2) ||
                     (textAlign === 'reversed-alternating' &&
                       !(index % 2) &&
@@ -94,7 +94,7 @@ const Timeline = ({
                     'mx-3 mb-2',
                 )}
                 style={{
-                  color: dotColor[index] || baseColor,
+                  color: dotColor[index] || dotBaseColor,
                   backgroundColor:
                     (iconBackground && iconBackground[index]) || 'transparent',
                 }}
@@ -132,10 +132,10 @@ const Timeline = ({
                   )}ch`,
                   color: titleColor[index] || titleBaseColor,
                   fontSize: titleSize,
+                  fontWeight: titleWeight,
                 }}
                 className={cn(
                   'flex flex-1 items-start opacity-100',
-                  titleWeight,
                   textAlign === 'left' && 'justify-end',
                   textAlign === 'right' && 'justify-start',
                   handleAlternating(index, textAlign),
@@ -153,10 +153,10 @@ const Timeline = ({
                   )}ch`,
                   color: descriptionColor[index] || descriptionBaseColor,
                   fontSize: descriptionSize,
+                  fontWeight: descriptionWeight,
                 }}
                 className={cn(
                   'flex flex-1 -translate-y-5 cursor-default items-start opacity-100',
-                  descriptionWeight,
                   textAlign === 'left' && 'justify-end opacity-100',
                   textAlign === 'right' && 'justify-start opacity-100',
                   handleAlternating(index, textAlign),

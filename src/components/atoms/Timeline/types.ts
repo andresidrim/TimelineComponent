@@ -6,7 +6,7 @@ export type TimelineProps = {
   textAlign?: 'left' | 'right' | 'alternating' | 'reversed-alternating'
   icon?: ReactNode[]
   outlined?: boolean
-  baseColor?: string
+  dotBaseColor?: string
   alternateContent?: string[]
   iconBackground?: string[]
   description?: string[]
@@ -19,9 +19,9 @@ export type TimelineProps = {
   alternateContentBaseColor?: string
   descriptionColor?: string[]
   descriptionBaseColor?: string
-  titleWeight?: string
-  alternateContentWeight?: string
-  descriptionWeight?: string
+  titleWeight?: number
+  alternateContentWeight?: number
+  descriptionWeight?: number
   pathColor?: string[]
   pathBaseColor?: string
 } & HTMLAttributes<HTMLDivElement>
