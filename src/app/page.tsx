@@ -57,7 +57,7 @@ export default function Home() {
         <input
           className="rounded-md px-4 py-2 text-black"
           type="text"
-          placeholder="titulo aqui"
+          placeholder="ex: Lift"
           value={titleInput}
           onChange={(e) => setTitleInput(e.target.value)}
         />
@@ -65,13 +65,13 @@ export default function Home() {
           className="rounded-md bg-slate-900 px-4 py-2 font-bold text-white"
           onClick={() => handleTitle()}
         >
-          Setar Titulo
+          Set Title
         </button>
 
         <input
           className="rounded-md px-4 py-2 text-black"
           type="text"
-          placeholder="alternate content aqui"
+          placeholder="ex: 16:00"
           value={alternateContentInput}
           onChange={(e) => setAlternateContentInput(e.target.value)}
         />
@@ -79,13 +79,13 @@ export default function Home() {
           className="rounded-md bg-slate-900 px-4 py-2 font-bold text-white"
           onClick={() => handleAlternateContent()}
         >
-          Setar Conteudo Alternativo
+          Set Alternate Content
         </button>
 
         <input
           className="rounded-md px-4 py-2 text-black"
           type="text"
-          placeholder="descricao aqui"
+          placeholder="ex: Leg Day!"
           value={descriptionInput}
           onChange={(e) => setDescriptionInput(e.target.value)}
         />
@@ -93,7 +93,7 @@ export default function Home() {
           className="rounded-md bg-slate-900 px-4 py-2 font-bold text-white"
           onClick={() => handleDescription()}
         >
-          Setar Descricao
+          Set Description
         </button>
       </div>
       <Timeline alternateContent={alternateContent} description={description}>
