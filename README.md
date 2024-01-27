@@ -25,14 +25,13 @@ const MyTimeline = () => {
 
   return (
     <Timeline
-      children={titles}
       alternateContent={alternateContent}
       description={descriptions}
       dotColor={['#ff0000', '#00ff00', '#0000ff']}
       textAlign="alternating"
       iconBackground={['#65737e', '#ff0000']}
       // Add other props as needed
-    />
+    >{titles}</Timeline>
   );
 };
 
