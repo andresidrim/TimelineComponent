@@ -1,6 +1,3 @@
-Certainly! Here is the content you can copy for your `README.md` file:
-
-```markdown
 # React Timeline Component
 
 A versatile React component for creating timelines with customizable features such as dot colors, icon backgrounds, text alignments, and more.
@@ -56,5 +53,3 @@ export default MyTimeline;
 | `iconBackground`      | `string[] \| undefined`                         | `['#65737e', '#ff0000']` | Background of each icon.                                                                                                                                                                                                                                                                                                                                             |
 | `description`          | `string[] \| undefined`                         | `undefined`              | Description for each item, showing up under the main title.                                                                                                                                                                                                                                                                                                            |
 | `titleSize`            | `string \| number \| undefined`                 | `16`                     | Font size
-
-Copy and paste this content into your `README.md` file, and feel free to further customize it as needed.
