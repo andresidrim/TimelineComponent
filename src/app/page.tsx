@@ -96,7 +96,11 @@ export default function Home() {
           Set Description
         </button>
       </div>
-      <Timeline alternateContent={alternateContent} description={description}>
+      <Timeline
+        textAlign="left"
+        alternateContent={alternateContent}
+        description={description}
+      >
         {title}
       </Timeline>
     </main>

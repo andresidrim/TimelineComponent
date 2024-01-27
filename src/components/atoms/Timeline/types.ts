@@ -3,7 +3,7 @@ import { HTMLAttributes, ReactNode } from 'react'
 export type TimelineProps = {
   children: string[]
   dotColor?: string[]
-  textAlign?: 'left' | 'right' | 'alternating' | 'reversed-alternating'
+  textAlign: 'left' | 'right' | 'alternating' | 'reversed-alternating'
   icon?: ReactNode[]
   outlined?: boolean
   dotBaseColor?: string
